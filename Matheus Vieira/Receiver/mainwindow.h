@@ -19,8 +19,15 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_clicked();
+
+public slots:
+    void attMsg();
+
 private:
     Ui::MainWindow *ui;
+    QTimer *tempo;
 };
 
 #endif // MAINWINDOW_H
