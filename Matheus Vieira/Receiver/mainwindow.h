@@ -2,10 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTimer>
-#include <QMessageBox>
-#include <QFile>
-#include <QTextStream>
+#include <QTimer>//Biblioteca para pegar o tempo atual e atualizar as mensagens periodicamente
+#include <QMessageBox>//Biblioteca para criar mensagens em uma caixa
+#include <QFile>//Biblioteca para leitura e escrita de arquivos
+#include <QTextStream>//Biblioteca para Salvar e ler Strings dos arquivos
 
 namespace Ui {
 class MainWindow;
@@ -23,11 +23,11 @@ private slots:
     void on_pushButton_clicked();
 
 public slots:
-    void attMsg();
+    void attMsg();// funcao que atualiza as mensagens lidas
 
 private:
     Ui::MainWindow *ui;
-    QTimer *tempo;
+    QTimer *tempo;//variável para salvar o tempo lido
 };
 
 #endif // MAINWINDOW_H

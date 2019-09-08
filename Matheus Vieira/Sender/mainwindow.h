@@ -2,10 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QFile>
-#include <QTime>
-#include <QMessageBox>
-#include <QTextStream>
+#include <QFile>// Biblioteca necessária para leitura e escrita de arquivos
+#include <QTime>// biblioteca para pegar o tempo atual do computador
+#include <QMessageBox>//Biblioteca para inserir a mensagem de erro
+#include <QTextStream>//Biblioteca para inserir Strings no arquivo
 
 namespace Ui {
 class MainWindow;
