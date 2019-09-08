@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QWidget::setWindowTitle("Sender");
+    QWidget::setWindowTitle("Receiver");
     QFont fonte = ui->label->font();
     fonte.setPointSize(12);
     ui->label->setFont(fonte);
